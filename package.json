@@ -1,0 +1,21 @@
+{
+  "name": "customer-cli",
+  "version": "1.0.0",
+  "description": "customer managment cli",
+  "main": "index.js",
+  "preferGlobal": true,
+  "bin": "./commands.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aalok Bhuyar",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^9.4.1",
+    "customer-cli": "^1.0.0",
+    "global": "^4.4.0",
+    "inquirer": "^8.0.0",
+    "mongodb": "^4.12.1",
+    "mongoose": "^6.7.5"
+  }
+}
