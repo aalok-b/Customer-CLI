@@ -6,8 +6,8 @@ const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
 //connect to db
-const db = mongoose.connect("mongodb://localhost:27017/customercli",{useNewUrlParser: true});
-mongoose.set('strictQuery', false);
+const db = mongoose.connect("mongodb+srv://ronin211:ronin211@cluster0.a00rwb8.mongodb.net/?retryWrites=true&w=majority");
+mongoose.set('strictQuery', true);
 
 if(db) console.log("connected");
 

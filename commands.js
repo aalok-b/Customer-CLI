@@ -1,6 +1,13 @@
 #!/usr/bin/env node
 // telling os to run application in node environment
 
+const SuppressWarnings = require("suppress-warnings");
+SuppressWarnings([
+    // warning can be an Error object or a string
+    // name is always a string (can be absent)
+    // I really don't know what ctor is, but it's in the ts definition
+    (warning, name, ctor) => name === "DeprecationWarning" && warning.toString() === "OutgoingMessage.prototype._headers is deprecated"
+]);
 const program = require('commander')
 const{ addCustomer,findCustomer, updateCustomer,removeCustomer,list} = require('./connect')
 const {prompt} = require('inquirer')

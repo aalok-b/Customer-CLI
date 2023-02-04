@@ -16,6 +16,7 @@
     "global": "^4.4.0",
     "inquirer": "^8.0.0",
     "mongodb": "^4.12.1",
-    "mongoose": "^6.7.5"
+    "mongoose": "^6.7.5",
+    "suppress-warnings": "^1.0.2"
   }
 }
